@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import { Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   return (
@@ -48,7 +49,7 @@ const ContactPage = () => {
               href="mailto:avacadonujval@gmail.com"
               style={{
                 display: 'block',
-                padding: 48,
+                padding: 'var(--container-padding)',
                 background: '#fff',
                 borderRadius: 20,
                 border: '1px solid #e5e5e5',
@@ -95,7 +96,8 @@ const ContactPage = () => {
               </p>
               <p style={{
                 fontSize: 16,
-                fontWeight: 500
+                fontWeight: 500,
+                wordBreak: 'break-word'
               }}>
                 avacadonujval@gmail.com
               </p>
@@ -108,7 +110,7 @@ const ContactPage = () => {
               rel="noopener noreferrer"
               style={{
                 display: 'block',
-                padding: 48,
+                padding: 'var(--container-padding)',
                 background: '#fff',
                 borderRadius: 20,
                 border: '1px solid #e5e5e5',
@@ -183,11 +185,11 @@ const ContactPage = () => {
             }}>
               Join businesses already using VOX to scale their operations
             </p>
-            <a href="/pricing" className="btn-primary" style={{
+            <Link to="/pricing" className="btn-primary" style={{
               display: 'inline-block'
             }}>
               View Pricing
-            </a>
+            </Link>
           </div>
         </div>
       </div>

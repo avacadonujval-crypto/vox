@@ -129,12 +129,13 @@ const PricingPage = () => {
             justifyContent: 'center',
             alignItems: 'center',
             gap: 12,
-            padding: 20,
+            padding: 'var(--container-padding)',
             background: '#fafafa',
             borderRadius: 12,
             maxWidth: 700,
             margin: '0 auto 64px',
-            border: '1px solid #e5e5e5'
+            border: '1px solid #e5e5e5',
+            flexWrap: 'wrap'
           }}>
             <MessageSquare size={20} style={{ color: '#000' }} />
             <span style={{ fontSize: 15, fontWeight: 500 }}>
@@ -300,7 +301,7 @@ const PricingPage = () => {
           <div style={{
             textAlign: 'center',
             marginTop: 64,
-            padding: 40,
+            padding: 'var(--container-padding)',
             background: '#fafafa',
             borderRadius: 16
           }}>
