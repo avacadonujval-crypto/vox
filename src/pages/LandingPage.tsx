@@ -59,11 +59,11 @@ const LandingPage = () => {
             justifyContent: 'center',
             flexWrap: 'wrap'
           }}>
-            <Link to="/signup" className="btn-primary" style={{
+            <Link to="/contact" className="btn-primary" style={{
               padding: '16px 40px',
               fontSize: 16
             }}>
-              Start Free Trial
+              Contact Sales
             </Link>
             <Link to="/pricing" className="btn-secondary" style={{
               padding: '16px 40px',
@@ -312,13 +312,13 @@ const LandingPage = () => {
           }}>
             Join hundreds of businesses already using VOX to scale their operations.
           </p>
-          <Link to="/signup" className="btn-primary" style={{
+          <Link to="/contact" className="btn-primary" style={{
             background: '#fff',
             color: '#000',
             padding: '18px 48px',
             fontSize: 16
           }}>
-            Get Started Free
+            Contact Sales
           </Link>
         </div>
       </section>

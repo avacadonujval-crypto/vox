@@ -25,7 +25,7 @@ const CustomerPortal = () => {
 
   useEffect(() => {
     if (!user || user.id !== customerId) {
-      navigate('/login');
+      navigate('/');
     }
   }, [user, customerId, navigate]);
 

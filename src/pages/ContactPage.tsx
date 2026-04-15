@@ -183,10 +183,10 @@ const ContactPage = () => {
             }}>
               Join businesses already using VOX to scale their operations
             </p>
-            <a href="/signup" className="btn-primary" style={{
+            <a href="/pricing" className="btn-primary" style={{
               display: 'inline-block'
             }}>
-              Create Account
+              View Pricing
             </a>
           </div>
         </div>

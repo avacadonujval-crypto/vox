@@ -69,7 +69,7 @@ const PricingPage = () => {
 
   const handleSubscribe = async (planId: string) => {
     if (!isAuthenticated) {
-      navigate('/signup');
+      navigate('/contact');
       return;
     }
 
