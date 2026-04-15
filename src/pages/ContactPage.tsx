@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-import { Mail } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
@@ -39,9 +39,9 @@ const ContactPage = () => {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'var(--feature-grid)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: 32,
-            maxWidth: 800,
+            maxWidth: 1100,
             margin: '0 auto'
           }}>
             {/* Email Card */}
@@ -100,6 +100,64 @@ const ContactPage = () => {
                 wordBreak: 'break-word'
               }}>
                 avacadonujval@gmail.com
+              </p>
+            </a>
+
+            {/* Phone Card */}
+            <a
+              href="tel:+917022299544"
+              style={{
+                display: 'block',
+                padding: 'var(--container-padding)',
+                background: '#fff',
+                borderRadius: 20,
+                border: '1px solid #e5e5e5',
+                textAlign: 'center',
+                transition: 'all 0.2s ease',
+                textDecoration: 'none',
+                color: 'inherit'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#000';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#e5e5e5';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: 64,
+                height: 64,
+                background: '#000',
+                borderRadius: 16,
+                marginBottom: 24
+              }}>
+                <Phone size={28} color="#fff" />
+              </div>
+              <h3 style={{
+                fontSize: 22,
+                fontWeight: 600,
+                letterSpacing: '-0.02em',
+                marginBottom: 12
+              }}>
+                Phone
+              </h3>
+              <p style={{
+                fontSize: 15,
+                color: '#525252',
+                marginBottom: 16
+              }}>
+                Call or WhatsApp us
+              </p>
+              <p style={{
+                fontSize: 16,
+                fontWeight: 500
+              }}>
+                +91 70222 99544
               </p>
             </a>
 
@@ -164,6 +222,8 @@ const ContactPage = () => {
                 Ujval Shrivatsa
               </p>
             </a>
+
+            
           </div>
 
           <div style={{
